@@ -24,14 +24,14 @@ export default function RootLayout({
     <html lang='en' suppressHydrationWarning>
       <body
         className={`
-      ${roboto.className} 
-      flex flex-col min-h-screen 
-      dark:bg-gradient-to-r dark:from-gray-800 dark:to-gray-900 
-      bg-gradient-to-r from-gray-200 to-gray-100 
-      dark:text-gray-100 text-gray-800 
-      transition-all ease-linear duration-1000 
-      justify-between max-w-screen-2xl px-16 2xl:px-0 mx-auto no-underline
-    `}
+        ${roboto.className} 
+        flex flex-col min-h-screen 
+        dark:bg-gradient-to-r dark:from-gray-800 dark:to-gray-900 
+        bg-gradient-to-r from-blue-100 to-gray-100 
+        dark:text-gray-100 text-gray-800 
+        transition-all ease-linear duration-1000 
+        justify-between max-w-screen-2xl px-16 2xl:px-0 mx-auto no-underline
+      `}
       >
         <ThemeProvider attribute='class' defaultTheme='system' enableSystem>
           <AuthProvider>
