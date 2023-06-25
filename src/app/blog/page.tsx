@@ -1,9 +1,15 @@
+'use server';
+
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
 
 async function getData() {
-  const res = await fetch('http://localhost:3000/api/posts', {
+  const res = await fetch(`${process.env.API_URL}/api/posts`, {
+    method: 'GET',
+    headers: {
+      'Content-Type': 'application/json',
+    },
     cache: 'no-store',
   });
   // The return value is *not* serialized
